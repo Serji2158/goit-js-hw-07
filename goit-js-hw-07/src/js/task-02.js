@@ -5,8 +5,6 @@
 // document.createElement().
 
 
-
-
 const ingredients = [
   'Картошка',
   'Грибы',
@@ -15,3 +13,17 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
+
+
+const allList = document.querySelector('#ingredients')
+
+const ingredientsList = ingredients.map(ingredient => {
+  const liRef = document.createElement('li');
+  liRef.textContent = ingredient;
+  return liRef;
+}
+  );
+
+  allList.append(...ingredientsList);
+
+ 
