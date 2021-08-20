@@ -30,15 +30,13 @@ const inText = document.querySelector('#validation-input');
 inText.addEventListener('blur', inputCheck);
 function inputCheck ({target}) {
     if(target.value.length === Number(target.dataset.length)) {
-        validationForm('valid', 'invalid');
+        validationForm('valid','invalid');
         return;
     };
-    validationForm('invalid', 'valid')
+    validationForm('invalid','valid');
 }
 
-
-
-function validationForm('valid','invalid'){
-    inText.classList.add('valid');
-    inText.classList.remove('invalid');
+function validationForm(valid, invalid){
+    inText.classList.add(valid);
+    inText.classList.remove(invalid);
 }
