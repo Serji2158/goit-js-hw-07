@@ -25,16 +25,14 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('#gallery');
+const arrayGallery = document.querySelector('#gallery');
 
-const galleryList = images =>{ 
-return images.map(image => `<li><img src= "${image.url}" alt= "${image.alt}"></li>`);
- );
+const galleryList = images => { 
+return images.map(({ url, alt }) => `<li><img src= "${url}" alt= "${alt}"></li>`);
+ };
 
  console.log(galleryList);
-  gallery.insertAdjacentHTML('beforeend', galleryList(images).join(''))
-  // console.log(gallery);
-
+  gallery.insertAdjacentHTML('beforeend', galleryList(images).join(''));
 
 
 
