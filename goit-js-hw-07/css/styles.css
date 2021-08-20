@@ -1,3 +1,10 @@
 .js-flex {
-    
+
+}
+
+.btn-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(20, 122, 126);
 }
