@@ -29,6 +29,7 @@ const arrayGallery = document.querySelector('#gallery');
 
 const galleryList = images => { 
 return images.map(({ url, alt }) => `<li><img src= "${url}" alt= "${alt}"></li>`);
+// galleryLisr.classList.add('js-flex');
  };
 
  console.log(galleryList);
