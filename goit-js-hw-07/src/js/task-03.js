@@ -28,12 +28,11 @@ const images = [
 const arrayGallery = document.querySelector('#gallery');
 
 const galleryList = images => { 
-return images.map(({ url, alt }) => `<li><img src= "${url}" alt= "${alt}"></li>`);
-// galleryLisr.classList.add('js-flex');
+return images.map(({ url, alt }) => `<li><img src= "${url}" alt= "${alt}" width="150"></li>`);
  };
 
- console.log(galleryList);
-  gallery.insertAdjacentHTML('beforeend', galleryList(images).join(''));
+  arrayGallery.insertAdjacentHTML('beforeend', galleryList(images).join(''));
+  console.log(galleryList);
 
 
 

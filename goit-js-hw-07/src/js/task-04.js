@@ -17,8 +17,8 @@ const refs = {
     span: counterView.querySelector('#value'),
 };
 
-// btnDecr.classList.add('btn-color');
-// btnIncr.classList.add('btn-color');
+refs.btnDecr.classList.add('btnDec-color');
+refs.btnIncr.classList.add('btnInc-color');
 
 let counterValue = Number(refs.span.textContent);
 
